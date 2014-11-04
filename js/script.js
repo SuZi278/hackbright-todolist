@@ -1,4 +1,5 @@
 $(document).ready(function() {
+	
 	var addItemToList = function(item) {
 		var $item = $('<span><input type="checkbox"x class="item"/><label>'+item+'</label><br/></span>');	
 		$('#todo-list').append($item);
@@ -11,6 +12,7 @@ $(document).ready(function() {
 		var itemValue = $('#todo-list-item').val();
 		addItemToList(itemValue);
 	});
+
 
 	$('#remove-item-button').on('click', function(e) {
 		e.preventDefault();
